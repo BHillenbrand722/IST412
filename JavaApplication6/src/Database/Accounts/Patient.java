@@ -11,4 +11,25 @@ package Database.Accounts;
  */
 public class Patient {
     
+    private Account account;
+    private PersonalInformation personalInformation;
+    
+    public Patient(Account account){
+        this.account = account;
+        this.personalInformation = null;
+    }
+    
+    public void setAccount(Account account){
+        this.account = account;
+    }
+    public void setPersonalInformation(PersonalInformation personalInformation){
+        this.personalInformation = personalInformation;
+    }
+    public Account getAccount(){
+        return this.account;
+    }
+    public PersonalInformation getPersonalInformation(){
+        return this.personalInformation;
+    }
+    
 }
