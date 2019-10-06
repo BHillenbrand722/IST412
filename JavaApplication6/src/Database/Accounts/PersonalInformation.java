@@ -11,4 +11,82 @@ package Database.Accounts;
  */
 public class PersonalInformation {
     
+    private String firstName;
+    private String middleName;
+    private String lastName;
+    
+    private String phoneNumber;
+    private String streetAddress;
+    private String city;
+    private String state;
+    private String zipCode;
+    
+    public PersonalInformation(){
+        this.firstName = "";
+        this.middleName = "";
+        this.lastName = "";
+        this.phoneNumber = "";
+        this.streetAddress = "";      
+        this.city = "";
+        this.state = "";
+        this.zipCode = "";
+    }
+    
+    public void setFirstName(String name){
+        this.firstName = name;
+    }
+    public void setMiddleName(String name){
+        this.middleName = name;
+    }
+    public void setLastName(String name){
+        this.lastName = name;
+    }
+    
+    public void setPhoneNumber(String number){
+        this.phoneNumber = number;
+    }
+    
+    public void setStreetAddress(String address){
+        this.streetAddress = address;
+    }
+    
+    public void setCity(String city){
+        this.city = city;
+    }
+    
+    public void setState(String state){
+        this.state = state;
+    }
+    
+    public void setZipCode(String zip){
+        this.zipCode = zip;
+    }
+    
+    public String getFirstName(){
+        return this.firstName;
+    }
+    public String getMiddleName(){
+        return this.middleName;
+    }
+    public String getLastName(){
+        return this.lastName;
+    }
+    
+    public String getPhoneNumber(){
+        return this.phoneNumber;
+    }
+    
+    public String getStreetAddress(){
+        return this.streetAddress;
+    }
+    public String getCity(){
+        return this.city;
+    }
+    public String getState(){
+        return this.state;
+    }
+    public String getZipCode(){
+        return this.zipCode;
+    }
+       
 }
