@@ -14,6 +14,7 @@ public class PersonalInformation {
     private String firstName;
     private String middleName;
     private String lastName;
+    private String sex;
     private String birthdate;
     
     private String phoneNumber;
@@ -27,6 +28,7 @@ public class PersonalInformation {
         this.middleName = "";
         this.lastName = "";
         this.birthdate = "";
+        this.sex = "";
         this.phoneNumber = "";
         this.streetAddress = "";      
         this.city = "";
@@ -47,7 +49,9 @@ public class PersonalInformation {
     public void setBirthdate(String birthdate){
         this.birthdate = birthdate;
     }
-    
+    public void setSex(String sex){
+        this.sex = sex;
+    }
     public void setPhoneNumber(String number){
         this.phoneNumber = number;
     }
@@ -79,6 +83,9 @@ public class PersonalInformation {
     }
     public String getBirthdate(){
         return this.birthdate;
+    }
+    public String getSex(){
+        return this.sex;
     }
     
     public String getPhoneNumber(){
