@@ -15,7 +15,7 @@ public class HospitalEmployee {
     private PersonalInformation personalInformation;
     private String title;
     
-    public MedicalProfessional(Account account){
+    public HospitalEmployee(Account account){
         this.account = account;
         this.personalInformation = null;
         this.title = "";
