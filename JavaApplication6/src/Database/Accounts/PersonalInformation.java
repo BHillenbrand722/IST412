@@ -14,6 +14,7 @@ public class PersonalInformation {
     private String firstName;
     private String middleName;
     private String lastName;
+    private String birthdate;
     
     private String phoneNumber;
     private String streetAddress;
@@ -25,6 +26,7 @@ public class PersonalInformation {
         this.firstName = "";
         this.middleName = "";
         this.lastName = "";
+        this.birthdate = "";
         this.phoneNumber = "";
         this.streetAddress = "";      
         this.city = "";
@@ -40,6 +42,10 @@ public class PersonalInformation {
     }
     public void setLastName(String name){
         this.lastName = name;
+    }
+    
+    public void setBirthdate(String birthdate){
+        this.birthdate = birthdate;
     }
     
     public void setPhoneNumber(String number){
@@ -70,6 +76,9 @@ public class PersonalInformation {
     }
     public String getLastName(){
         return this.lastName;
+    }
+    public String getBirthdate(){
+        return this.birthdate;
     }
     
     public String getPhoneNumber(){
