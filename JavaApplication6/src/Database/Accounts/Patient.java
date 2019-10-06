@@ -9,13 +9,15 @@ import java.util.ArrayList;
 
 public class Patient {
     
+    private int patientID;
     private Account account;
     private PersonalInformation personalInformation;
     private InsuranceInformation insuranceInformation;
     private ArrayList<MedicalRecord> medicalRecords;
     
-    public Patient(Account account){
+    public Patient(Account account, Integer patientID){
         this.account = account;
+        this.patientID = patientID;
         this.personalInformation = null;
         this.insuranceInformation = null;
         this.medicalRecords = new ArrayList<MedicalRecord>();
@@ -23,6 +25,9 @@ public class Patient {
     
     public void setAccount(Account account){
         this.account = account;
+    }
+    public void setPatientID(Integer patientID){
+        this.patientID = patientID;
     }
     public void setPersonalInformation(PersonalInformation personalInformation){
         this.personalInformation = personalInformation;
@@ -36,6 +41,9 @@ public class Patient {
     
     public Account getAccount(){
         return this.account;
+    }
+    public Integer getPatientID(){
+        return this.patientID;
     }
     public PersonalInformation getPersonalInformation(){
         return this.personalInformation;
