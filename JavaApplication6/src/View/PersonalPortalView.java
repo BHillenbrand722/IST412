@@ -10,5 +10,9 @@ package View;
  * @author bmh5582
  */
 public class PersonalPortalView {
-    
+
+    //Will add more once view development has started.
+    public PersonalPortalView(){
+
+    }
 }

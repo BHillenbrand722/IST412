@@ -10,5 +10,9 @@ package View;
  * @author bmh5582
  */
 public class AdministatorView {
-    
+
+    //Will add more once view development has started.
+    public AdministatorView(){
+
+    }
 }

@@ -10,5 +10,9 @@ package View;
  * @author bmh5582
  */
 public class MainMenuView {
-    
+
+    //Will add more once view development has started.
+    public MainMenuView(){
+
+    }
 }
