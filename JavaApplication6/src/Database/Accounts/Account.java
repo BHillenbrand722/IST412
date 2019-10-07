@@ -6,10 +6,10 @@ public class Account {
     private String password;
     private String type;
     
-    public Account(String username, String password){
-        this.username = username;
-        this.password = password;
-    }
+    //public Account(String username, String password){
+   //     this.username = username;
+   //     this.password = password;
+   // }
     
     public Account(String username, String password, String type){
         this.username = username;

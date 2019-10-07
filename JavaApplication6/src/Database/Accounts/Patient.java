@@ -5,6 +5,8 @@
  */
 package Database.Accounts;
 
+import Database.Records.InsuranceInformation;
+import Database.Records.MedicalRecord;
 import java.util.ArrayList;
 
 public class Patient {

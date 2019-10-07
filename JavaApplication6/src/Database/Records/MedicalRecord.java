@@ -5,10 +5,23 @@
  */
 package Database.Records;
 
+import Database.Accounts.Patient;
+
 /**
  *
  * @author bmh5582
  */
 public class MedicalRecord {
+    Patient patient; 
+    String preExistingConditions; 
+    double height;
+    double weight; 
     
+    public MedicalRecord(Patient patient, String preExistingConditions, double height, double weight)
+    {
+        this.patient = patient;
+        this.preExistingConditions = preExistingConditions;
+        this.weight = weight;
+        this.height = height; 
+    }
 }

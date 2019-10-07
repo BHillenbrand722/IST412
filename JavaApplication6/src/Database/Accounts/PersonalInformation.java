@@ -23,7 +23,10 @@ public class PersonalInformation {
     private String state;
     private String zipCode;
     
-    public PersonalInformation(){
+    public PersonalInformation(String firstName, String middleName, String lastName, String sex, String birthdate, String phoneNumber, String streetAddress, 
+            String city, String state, String zipCode){
+        
+        
         this.firstName = "";
         this.middleName = "";
         this.lastName = "";

@@ -16,7 +16,7 @@ public class InsuranceInformation {
     private String groupNumber;
     private String primaryHolderFirstName;
     private String primaryHolderLastName;
-    private String primaryHolderBirthate;
+    private String primaryHolderBirthdate;
     
     public InsuranceInformation(String provider, String idNumber, String groupNumber, String primaryHolderFirstName, String primaryHolderLastName, String primaryHolderBirthdate){
         this.provider = provider;

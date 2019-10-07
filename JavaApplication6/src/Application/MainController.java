@@ -5,6 +5,9 @@
  */
 package Application;
 
+import Database.MainModel;
+import View.MainView;
+
 /**
  *
  * @author bmh5582
