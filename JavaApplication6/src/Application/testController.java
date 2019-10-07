@@ -41,52 +41,50 @@ public class testController{
   public void testPatient(){
     try{
       Database.Accounts.Account testAccount = new Database.Accounts.Account("TestUsername", "TestPassword", "TestType");
-      //This should expect a account object and int, but I'm purposefully throwing it a string to try and make it fail.
-      //Ideally it should have a counter to this, hense the test being succesful, which it is not going to be yet.
       Database.Accounts.Patient testPatient = new Database.Accounts.Patient(testAccount, 22 );
     }
     catch(Exception e){
       System.out.print("TEST FAILED: Account not instantiated correctly.");
-    
+
     }
   }
     public void testInsurance() {
     try {
-       InsuranceInformationController insurTest = new InsuranceInformationController(); 
-       InsuranceInformation insurance = new InsuranceInformation("Provider", "id", "groupNumber", "primaryHolderFirstName", "primaryHolderLastName", "primaryHolderBirthdate"); 
-       insurTest.insertRecordToDatabase(insurance); 
+       InsuranceInformationController insurTest = new InsuranceInformationController();
+       InsuranceInformation insurance = new InsuranceInformation("Provider", "id", "groupNumber", "primaryHolderFirstName", "primaryHolderLastName", "primaryHolderBirthdate");
+       insurTest.insertRecordToDatabase(insurance);
         System.out.println(insurTest.selectRecordFromDatabase());
-        
+
     }
     catch(Exception e){
       System.out.print("TEST FAILED: Insurance Controller not instantiated correctly.");
     }
 }
-    
+
     public void testMedicalRecord() {
     try {
-       MedicalRecordController medTest = new MedicalRecordController(); 
-        Account account = new Account("", "", ""); 
-        Patient patient = new Patient(account, 22); 
-        MedicalRecord mr = new MedicalRecord(patient, "", 100.0, 200.0); 
-        
+       MedicalRecordController medTest = new MedicalRecordController();
+        Account account = new Account("", "", "");
+        Patient patient = new Patient(account, 22);
+        MedicalRecord mr = new MedicalRecord(patient, "", 100.0, 200.0);
+
         medTest.insertRecordToDatabase(mr);
         System.out.println(medTest.selectRecordFromDatabase());
-        
+
     }
     catch(Exception e){
       System.out.print("TEST FAILED: MedicalRecord object could not be instantiated.");
     }
   }
-    
+
     public void testPersonalInfo() {
     try {
-       PersonalInformationController piTest = new PersonalInformationController(); 
-         PersonalInformation pi = new PersonalInformation("", "", "", "", "", "","", "", "",""); 
-        
-        piTest.insertInfoToDatabase(pi); 
+       PersonalInformationController piTest = new PersonalInformationController();
+         PersonalInformation pi = new PersonalInformation("", "", "", "", "", "","", "", "","");
+
+        piTest.insertInfoToDatabase(pi);
         System.out.println(piTest.selectInfoFromDatabase());
-        
+
     }
     catch(Exception e){
       System.out.print("TEST FAILED: PersonalInfo object could not be instantiated.");
