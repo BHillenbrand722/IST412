@@ -10,5 +10,12 @@ package Database;
  * @author bmh5582
  */
 public class MainModel {
-    
+
+  //Will create list or sometime of storage of accounts here.
+  
+  public MainModel(){
+
+  }
+
+
 }

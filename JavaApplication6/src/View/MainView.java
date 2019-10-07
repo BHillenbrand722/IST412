@@ -10,5 +10,8 @@ package View;
  * @author bmh5582
  */
 public class MainView {
-    
+
+    public MainView(){
+
+    }
 }
