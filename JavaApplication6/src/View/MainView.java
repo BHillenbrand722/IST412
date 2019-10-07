@@ -13,9 +13,9 @@ public class MainView {
 
     public MainView(){
       administatorView = new AdministatorView();
-      medicalRecordView = new medicalRecordView();
-      personalPortalView = new personalPortalView();
-      mainMenuView = new mainMenuView();
+      medicalRecordView = new MedicalRecordView();
+      personalPortalView = new PersonalPortalView();
+      mainMenuView = new MainMenuView();
     }
 
     public AdministatorView getAdministatorView(){
