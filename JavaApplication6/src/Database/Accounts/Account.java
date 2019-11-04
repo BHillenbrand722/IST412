@@ -72,18 +72,24 @@ public class Account {
         return new Account(testUsername, testPassword, testType);
     }
     
-    public void signIn(String checkUsername, String checkPassword){
+    public String signIn(String checkUsername, String checkPassword){
+        System.out.println("reached");
         if(this.username.equals(checkUsername) && this.password.equals(checkPassword)){
-            System.out.println("Welcome " + this.username + "!");
+            System.out.println("reached");
+            return "Login Successful";
+            
         }
         else if(this.username.equals(checkUsername) && this.password != checkPassword){
-            System.out.println("Password is incorrect, please try again.");
+            return "Password is incorrect, please try again.";
         }
         else if(this.username != checkUsername && (this.password.equals(checkPassword) || this.password != checkPassword)){
-            System.out.println("Username does not exist, please try again or create an account");
+            return "Username does not exist, please try again or create an account";
         }
         else if(this.username == null && this.password == null){
-            System.out.println("Please create an account to sign in.");
+            return "Please create an account to sign in.";
+        }
+        else{
+            return null;
         }
     }
     
