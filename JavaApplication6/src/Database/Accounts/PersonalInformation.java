@@ -27,16 +27,16 @@ public class PersonalInformation {
             String city, String state, String zipCode){
         
         
-        this.firstName = "";
-        this.middleName = "";
-        this.lastName = "";
-        this.birthdate = "";
-        this.sex = "";
-        this.phoneNumber = "";
-        this.streetAddress = "";      
-        this.city = "";
-        this.state = "";
-        this.zipCode = "";
+        this.firstName = firstName;
+        this.middleName = middleName;
+        this.lastName = lastName;
+        this.birthdate = birthdate;
+        this.sex = sex;
+        this.phoneNumber = phoneNumber;
+        this.streetAddress = streetAddress;      
+        this.city = city;
+        this.state = state;
+        this.zipCode = zipCode;
     }
     
     public void setFirstName(String name){
