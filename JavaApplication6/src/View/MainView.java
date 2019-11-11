@@ -8,13 +8,13 @@ public class MainView {
     
     AdministatorView administatorView;
     MedicalRecordView medicalRecordView;
-    PersonalPortalView personalPortalView;
+    PersonalPortalViewController personalPortalView;
     MainMenuView mainMenuView;
 
     public MainView(){
       administatorView = new AdministatorView();
       medicalRecordView = new MedicalRecordView();
-      personalPortalView = new PersonalPortalView();
+      
       mainMenuView = new MainMenuView();
     }
 
@@ -26,7 +26,7 @@ public class MainView {
       return medicalRecordView;
     }
 
-    public PersonalPortalView getPersonalPortalView(){
+    public PersonalPortalViewController getPersonalPortalView(){
       return personalPortalView;
     }
 

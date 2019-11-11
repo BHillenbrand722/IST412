@@ -13,16 +13,17 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="900.0" minWidth="1200.0" prefHeight="900.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <TitledPane animated="false" layoutX="984.0" layoutY="14.0" prefHeight="214.0" prefWidth="207.0" text="Account">
+      <TitledPane fx:id="accountPane" animated="false" expanded="false" layoutX="984.0" layoutY="14.0" onMouseClicked="#setUsernameText" prefHeight="214.0" prefWidth="207.0" text="Account">
         <content>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="124.0" prefWidth="196.0">
+          <AnchorPane fx:id="accountAPane" minHeight="0.0" minWidth="0.0" prefHeight="124.0" prefWidth="196.0">
                <children>
                   <Circle fill="WHITE" layoutX="167.0" layoutY="47.0" radius="24.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Text fx:id="usernameText" layoutX="14.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" />
+                  <Text fx:id="usernameText" layoutX="14.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" />
                   <Button fx:id="logoutBtn" layoutX="133.0" layoutY="139.0" mnemonicParsing="false" onAction="#logoutToLogin" text="Logout" />
+                  <Button fx:id="editInfoButton" layoutX="14.0" layoutY="139.0" mnemonicParsing="false" onAction="#moveToPersonalInfo" prefHeight="25.0" prefWidth="70.0" text="Edit Info" />
+                  <Text fx:id="accountTypeText" layoutX="15.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AccountType" />
                </children>
             </AnchorPane>
         </content>
