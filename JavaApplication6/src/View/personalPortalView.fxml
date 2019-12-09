@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="680.0" minWidth="1200.0" prefHeight="680.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text fill="#001e6b" layoutX="24.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AlphaCare" wrappingWidth="207.0">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Text>
+      <Text fill="#020061" layoutX="24.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bringing you the best health possible!">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Pane layoutX="14.0" layoutY="92.0" prefHeight="568.0" prefWidth="1167.0">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="Full Name">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="47.0" text="First">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="249.0" layoutY="48.0" text="Middle">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="484.0" layoutY="48.0" text="Last">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="firstname" layoutX="14.0" layoutY="67.0" prefHeight="25.0" prefWidth="187.0" />
+            <TextField fx:id="middlename" layoutX="249.0" layoutY="67.0" prefHeight="25.0" prefWidth="187.0" />
+            <TextField fx:id="lastname" layoutX="484.0" layoutY="67.0" prefHeight="25.0" prefWidth="187.0" />
+            <Label layoutX="15.0" layoutY="133.0" text="Sex">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <MenuButton fx:id="sexselector" layoutX="58.0" layoutY="131.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="127.0">
+              <items>
+                <MenuItem fx:id="maleoption" mnemonicParsing="false" onAction="#sexSelector" text="Male" />
+                <MenuItem fx:id="femaleoption" mnemonicParsing="false" onAction="#sexSelector" text="Female" />
+              </items>
+            </MenuButton>
+            <Label layoutX="13.0" layoutY="184.0" text="Date of Birth">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="221.0" text="Month (Ex. September)">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="208.0" layoutY="221.0" text="Day (XX)">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="300.0" layoutY="221.0" text="Year (XXXX)">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="birthmonth" layoutX="14.0" layoutY="241.0" prefHeight="25.0" prefWidth="163.0" />
+            <TextField fx:id="birthday" layoutX="208.0" layoutY="241.0" prefHeight="25.0" prefWidth="57.0" />
+            <TextField fx:id="birthyear" layoutX="300.0" layoutY="241.0" prefHeight="25.0" prefWidth="67.0" />
+            <Label layoutX="13.0" layoutY="290.0" text="Phone Number">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="phonenum" layoutX="14.0" layoutY="331.0" prefHeight="25.0" prefWidth="233.0" />
+            <Label layoutX="13.0" layoutY="387.0" text="Address">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="426.0" text="Street">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="street" layoutX="13.0" layoutY="446.0" prefHeight="25.0" prefWidth="394.0" />
+            <Label layoutX="14.0" layoutY="489.0" text="City">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="city" layoutX="14.0" layoutY="512.0" prefHeight="25.0" prefWidth="194.0" />
+            <Label layoutX="239.0" layoutY="489.0" text="State">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="state" layoutX="239.0" layoutY="512.0" prefHeight="25.0" prefWidth="53.0" />
+            <Label layoutX="324.0" layoutY="489.0" text="ZIP">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="zip" layoutX="325.0" layoutY="512.0" prefHeight="25.0" prefWidth="85.0" />
+            <Button fx:id="saveChangesButton" layoutX="680.0" layoutY="500.0" mnemonicParsing="false" onAction="#saveChanges" prefHeight="48.0" prefWidth="173.0" text="Save Changes" />
+            <Button fx:id="backToDashboardButton" layoutX="887.0" layoutY="500.0" mnemonicParsing="false" onAction="#backToDashboard" prefHeight="48.0" prefWidth="256.0" text="Return to Dashboard" />
+            <Text fx:id="statustext" layoutX="429.0" layoutY="529.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" -- -  -- - - " visible="false" wrappingWidth="233.0" />
+            <Button fx:id="fillInfoButton" layoutX="711.0" layoutY="61.0" mnemonicParsing="false" onAction="#fillInfo" prefHeight="37.0" prefWidth="173.0" text="Fill Info from Stored" />
+         </children>
+      </Pane>
+   </children>
+</Pane>

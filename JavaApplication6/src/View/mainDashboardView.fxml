@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="900.0" minWidth="1200.0" prefHeight="900.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TitledPane fx:id="accountPane" animated="false" expanded="false" layoutX="984.0" layoutY="14.0" onMouseClicked="#setUsernameText" prefHeight="214.0" prefWidth="207.0" text="Account">
+        <content>
+          <AnchorPane fx:id="accountAPane" minHeight="0.0" minWidth="0.0" prefHeight="124.0" prefWidth="196.0">
+               <children>
+                  <Circle fill="WHITE" layoutX="167.0" layoutY="47.0" radius="24.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Text fx:id="usernameText" layoutX="14.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" />
+                  <Button fx:id="logoutBtn" layoutX="133.0" layoutY="139.0" mnemonicParsing="false" onAction="#logoutToLogin" text="Logout" />
+                  <Button fx:id="editInfoButton" layoutX="14.0" layoutY="139.0" mnemonicParsing="false" onAction="#moveToPersonalInfo" prefHeight="25.0" prefWidth="70.0" text="Edit Info" />
+                  <Text fx:id="accountTypeText" layoutX="15.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AccountType" />
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+      <TabPane layoutX="14.0" layoutY="96.0" prefHeight="776.0" prefWidth="951.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Calendar">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+          <Tab text="Prescriptions">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Accordion layoutX="7.0" layoutY="7.0" prefHeight="700.0" prefWidth="941.0">
+                          <panes>
+                            <TitledPane animated="false" prefHeight="776.0" prefWidth="941.0" text="Example RX 1">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                              </content>
+                            </TitledPane>
+                            <TitledPane animated="false" text="Example RX 2">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                              </content>
+                            </TitledPane>
+                            <TitledPane animated="false" prefHeight="268.0" prefWidth="941.0" text="Example RX 3">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="210.0" prefWidth="939.0" />
+                              </content>
+                            </TitledPane>
+                          </panes>
+                        </Accordion>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Communications">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+            <Tab text="Medical Records">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView layoutX="7.0" layoutY="6.0" prefHeight="705.0" prefWidth="937.0">
+                          <columns>
+                            <TableColumn prefWidth="98.0" text="Record ID" />
+                            <TableColumn prefWidth="104.0" text="Date" />
+                              <TableColumn prefWidth="158.0" text="Practicioner" />
+                              <TableColumn prefWidth="225.0" text="Location" />
+                              <TableColumn prefWidth="351.0" text="Description" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Text fill="#001e6b" layoutX="24.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AlphaCare" wrappingWidth="207.0">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Text>
+      <Text fill="#020061" layoutX="24.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bringing you the best health possible!">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>
